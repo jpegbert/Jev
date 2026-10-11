@@ -1,0 +1,16 @@
+# 核心演示（三原语/门控/菜品匹配/搜索/十场景/Agent护栏等）零第三方依赖，
+# 使用内置离线 Mock 即可端到端运行，仅需 Python 3.9+。
+#
+# 真实 HTTP 调用（JEV 云 / 本地 Laya 服务）需要：
+requests>=2.28
+#
+# 评测 / 阈值 / 配图脚本需要：
+numpy>=1.24
+matplotlib>=3.7
+#
+# 本地 Laya 服务化（部署方式 2，三选一即可）：
+#   pip install "laya[serve]"          # 通用 CPU/CUDA（PyTorch）
+#   pip install laya-mlx               # Apple Silicon 原生（无 PyTorch）
+fastapi>=0.110
+uvicorn>=0.27
+pydantic>=2.0
